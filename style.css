@@ -9,7 +9,7 @@ body {
   height: 100vh;
 }
 
-.loading-page {
+.loading {
   position: absolute;
   width: 100%;
   background-color: black;
@@ -19,17 +19,17 @@ body {
   justify-content: center;
 }
 
-.loading-page.loaded {
+.loading.loaded {
   transition: transform 0.8s ease-in-out;
   transform: translate(-100%, 0);
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   animation: spin 0.5s linear infinite;
 }
 

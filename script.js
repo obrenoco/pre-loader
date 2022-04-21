@@ -1,4 +1,8 @@
-window.addEventListener("load", () => {
-  console.log("hi");
-  document.getElementById("loading-page").classList.add("loaded");
-});
+const ready = () => {
+  document.getElementById("loading").classList.add("loaded");
+  setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+  }, 1000);
+};
+
+window.addEventListener("load", setTimeout(ready, 2000));
